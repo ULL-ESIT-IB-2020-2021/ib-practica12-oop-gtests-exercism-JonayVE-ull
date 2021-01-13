@@ -2,7 +2,7 @@
 
 #include "complejos.h"
  
-TEST(DateTest, Add){
+TEST(ComplexTest, Add){
     Complex c1{3,4};
     Complex c2{-3,8};
     Complex c3{6,-1};
@@ -16,7 +16,7 @@ TEST(DateTest, Add){
     
 }
 
-TEST(DateTest, Sub){
+TEST(ComplexTest, Sub){
     Complex c1{3,4};
     Complex c2{-3,8};
     Complex c3{6,-1};
@@ -30,7 +30,7 @@ TEST(DateTest, Sub){
     
 }
 
-TEST(DateTest, Multiplicate){
+TEST(ComplexTest, Multiplicate){
     Complex c1{3,4};
     Complex c2{-3,8};
     Complex c3{6,-1};
@@ -44,7 +44,7 @@ TEST(DateTest, Multiplicate){
     
 }
 
-TEST(DateTest, Divide){
+TEST(ComplexTest, Divide){
     Complex c1{3,4};
     Complex c2{-3,8};
     Complex c3{6,-1};
