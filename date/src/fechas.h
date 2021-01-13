@@ -4,9 +4,13 @@
  * Grado en Ingeniería Informática
  * Informática Básica
  *
- * @author F. de Sande
- * @date 7.nov.2020
- * @brief This file declares the "Help Text" constant and two functions
+ * @author Gabriel Jonay Vera Estévez
+ * @date 10.enero.2021
+ * @brief Desarrolle una clase Fecha que permita representar y gestionar fechas. Incorpore en la clase los miembros de datos 
+ *        y métodos que considere adecuados para la finalidad que se persigue en este ejercicio. Incluya un método que permita 
+ *        determinar si el año correspondiente a una fecha es un año bisiesto o no. Realice un programa cliente fechas.cc que 
+ *        tome como parámetro una fecha, un número y un nombre de fichero:
+ * 
  *
  */
 

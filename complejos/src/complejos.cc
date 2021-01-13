@@ -4,16 +4,13 @@
  * Grado en Ingeniería Informática
  * Informática Básica
  *
- * @author F. de Sande
- * @date 7.nov.2020
- * @brief Cada nuevo término de la serie de Fibonacci se genera sumando los dos anteriores. 
- *        Comenzando con 0 y 1, los primeros 10 términos serán: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34
- *        Desarrolle en C++ un programa que calcule la suma de todos los términos de valor par 
- *        de la serie que sean menores que 1000.
- * @see https://docs.google.com/document/d/1-3hTIVf8tPrbn9u0vs0Cm2IGyX1XBgv8hReVU0KOSUQ/edit?usp=sharing
- * @see stoi http://www.cplusplus.com/reference/string/stoi/
- * An Object Oriented Version of the program:
- * @see https://stackoverflow.com/questions/21360694/sum-of-even-fibonacci-numbers-under-1000
+ * @author Gabriel Jonay Vera Estévez
+ * @date 10.enero.2021
+ * @brief Desarrolle un programa cliente complejos.cc que permita operar con números 
+ *        complejos y haga uso de la clase Complejo que diseñe. La clase Complejo ha 
+ *        de contener al menos métodos que permitan (Print()) imprimir un número complejo 
+ *        así como sumar (Add()) y restar (Sub()) números complejos. 
+ * 
  *
  */
 

@@ -6,10 +6,10 @@
  *
  * @author Gabriel Jonay Vera Estévez
  * @date 10.enero.2021
- * @brief Desarrolle una clase Fecha que permita representar y gestionar fechas. Incorpore en la clase los miembros de datos 
- *        y métodos que considere adecuados para la finalidad que se persigue en este ejercicio. Incluya un método que permita 
- *        determinar si el año correspondiente a una fecha es un año bisiesto o no. Realice un programa cliente fechas.cc que 
- *        tome como parámetro una fecha, un número y un nombre de fichero:
+ * @brief Desarrolle un programa cliente complejos.cc que permita operar con números 
+ *        complejos y haga uso de la clase Complejo que diseñe. La clase Complejo ha 
+ *        de contener al menos métodos que permitan (Print()) imprimir un número complejo 
+ *        así como sumar (Add()) y restar (Sub()) números complejos. 
  * 
  *
  */

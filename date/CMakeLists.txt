@@ -3,7 +3,7 @@
 # Grado en Ingeniería Informática
 # Informática Básica
 #
-# @author F. de Sande
+# @author Gabriel Jonay Vera Estévez
 # @date 18 Jun 2020
 # @brief CMakeLists.txt example
 # CMakeLists.txt defines the whole build

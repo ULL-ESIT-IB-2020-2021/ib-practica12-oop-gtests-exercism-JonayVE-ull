@@ -4,9 +4,13 @@
  * Grado en Ingeniería Informática
  * Informática Básica
  *
- * @author F. de Sande
- * @date 7.nov.2020
- * @brief This file declares the "Help Text" constant and two functions
+ * @author Gabriel Jonay Vera Estévez
+ * @date 10.enero.2021
+ * @brief Desarrolle un programa cliente complejos.cc que permita operar con números 
+ *        complejos y haga uso de la clase Complejo que diseñe. La clase Complejo ha 
+ *        de contener al menos métodos que permitan (Print()) imprimir un número complejo 
+ *        así como sumar (Add()) y restar (Sub()) números complejos. 
+ * 
  *
  */
 
