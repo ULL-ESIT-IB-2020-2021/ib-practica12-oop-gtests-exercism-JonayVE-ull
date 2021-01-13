@@ -18,7 +18,7 @@ class Date{
  public:
   Date(int day, int month, int year){day_ = day; month_ = month; year_ = year;}
   void Print();
-  void IsLeapYear();
+  bool IsLeapYear();
   int GetYear() { return year_; }
   int GetMonth() { return month_; }
   int GetDay() { return day_; }

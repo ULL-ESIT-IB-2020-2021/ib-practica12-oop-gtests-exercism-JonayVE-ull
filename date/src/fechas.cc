@@ -23,11 +23,19 @@ void Date::Print() {
   std::cout << "The Date is " << day_ << "/" << month_ << "/" << year_ << std::endl;
 }
 
-bool Date::IsLeapYear(Date date){
-  if(((date.GetYear()%100)%4)==0){
-   return true;
+bool Date::IsLeapYear(){
+  if(year_<100){
+    if(((year_%100)%4)==0){
+      return true;
+    }else{
+      return false;
+    }
   }else{
-    return false;
+    if((year_%4)==0){
+      return true;
+    }else{
+      return false;
+    }
   }
 }
 

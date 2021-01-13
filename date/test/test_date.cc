@@ -33,3 +33,13 @@ TEST(DateTest, lower){
     EXPECT_EQ(true, d1 < d2 );
     EXPECT_EQ(false, d1 < d1);
 }
+
+TEST(DateTest, LeapYear){
+    Date d1{1, 12, 20};
+    Date d2{2, 12, 21};
+    Date d3{3, 11, 19};
+
+    EXPECT_EQ(true, d1.IsLeapYear());
+    EXPECT_EQ(false, d2.IsLeapYear());
+    EXPECT_EQ(false, d3.IsLeapYear());
+}
