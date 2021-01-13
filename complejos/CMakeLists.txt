@@ -22,7 +22,7 @@ cmake_minimum_required(VERSION 3.1)  # Mandatory
 # set the project name 
 project(complejos                # Mandatory
     VERSION 1.0
-    DESCRIPTION "A simple CMake project for the Fibonacci Sum application"
+    DESCRIPTION "A simple CMake project for the Complex Class application"
     LANGUAGES CXX)
 
 # specify the C++ standard
