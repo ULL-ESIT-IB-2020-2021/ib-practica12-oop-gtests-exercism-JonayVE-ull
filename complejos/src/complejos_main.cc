@@ -18,7 +18,7 @@
 #include <iostream>
 
   
-int main (int argc, char* argv[]) {
+int main () {
   
   Complex complex1{4, 5}, complex2{7, -8};
   Complex result{0,0};
