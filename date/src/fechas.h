@@ -13,7 +13,8 @@
  * 
  *
  */
-
+#ifndef FECHAS_H
+#define FECHAS_H
 class Date{
  public:
   Date(int day, int month, int year){day_ = day; month_ = month; year_ = year;}
@@ -35,3 +36,5 @@ class Date{
   int year_;
 };
 
+void IsDateValid(Date date);
+#endif

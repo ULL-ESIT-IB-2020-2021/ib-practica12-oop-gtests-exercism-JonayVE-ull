@@ -60,6 +60,7 @@ int main (int argc, char* argv[]) {
 
 
     Date some_date(day, month, year);
+    IsDateValid(some_date);
     date_object.push_back(some_date); 
   }
 

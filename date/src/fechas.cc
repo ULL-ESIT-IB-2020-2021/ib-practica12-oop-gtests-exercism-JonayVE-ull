@@ -93,9 +93,62 @@ std::ostream& operator<< (std::ostream &out, const Date& date) {
 }
 
 /** Overload == function
- *  @param[in] const d1 Date Object
- *  @param[in] const d2 Date Object
+ *  @param[in] d1 Date Object
+ *  @param[in] d2 Date Object
  */
 bool operator== (const Date &d1, const Date &d2) {
   return (d1.day_ == d2.day_ && d1.month_ == d2.month_ && d1.year_ == d2.year_);
+}
+
+/** IsDateValid function
+ * Esta función permite comprobar que se ha introducido una fecha correcta
+ *  @param[in] date Date Object
+ */
+void IsDateValid(Date date){
+  switch (date.GetMonth()){
+    case 2:
+      if(date.IsLeapYear()){
+        if(date.GetDay() < 30){
+        }else{
+          std::cout << "fecha incorrecta, (dd/mm/aa), con 0 donde sea necesario" << std::endl;
+          exit(EXIT_SUCCESS);
+        }
+      }else{
+        if(date.GetDay()<29){
+        }else{
+          std::cout << "fecha incorrecta, (dd/mm/aa), con 0 donde sea necesario" << std::endl;
+          exit(EXIT_SUCCESS);
+        }
+      }      
+      break;
+
+    case 1:
+    case 3:
+    case 5:
+    case 7:
+    case 8:
+    case 10:
+    case 12:
+      if(date.GetDay() < 32){
+      }else{
+        std::cout << "fecha incorrecta, (dd/mm/aa), con 0 donde sea necesario" << std::endl;
+        exit(EXIT_SUCCESS);
+      }
+      break;
+
+    case 4:
+    case 6:
+    case 9:
+    case 11:
+      if(date.GetDay() < 31){
+      }else{
+        std::cout << "fecha incorrecta, (dd/mm/aa), con 0 donde sea necesario" << std::endl;
+        exit(EXIT_SUCCESS);
+      }
+      break;
+    default:
+      std::cout << "fecha incorrecta, (dd/mm/aa), con 0 donde sea necesario" << std::endl;
+        exit(EXIT_SUCCESS);
+      break;
+  }
 }

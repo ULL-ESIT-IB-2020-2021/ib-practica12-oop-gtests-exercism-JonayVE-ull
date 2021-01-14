@@ -13,7 +13,8 @@
  * 
  *
  */
-
+#ifndef COMPLEJOS_H
+#define COMPLEJOS_H
 class Complex{
  public:
   Complex(double real = 0, double imaginary = 0){real_ = real; imaginary_ = imaginary;};
@@ -31,5 +32,4 @@ class Complex{
   double imaginary_;
 
 };
-
-
+#endif
