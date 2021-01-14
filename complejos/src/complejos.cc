@@ -17,31 +17,57 @@
 #include <iostream>
 #include "complejos.h"    
 
-
+/** Print function
+ *  La función permite imprimir los objetos de la clase Complex
+ */
 void Complex::Print() {
   std::cout << real_ << " + (" << imaginary_ << ") i" << std::endl;
 }
-
+/** SetComplex function
+ *  La función permite definir los parametros de los objetos de la clase Complex
+ *  @param[in] real real part of complex object
+ *  @param[in] imaginary imaginary part of complex object
+ */
 void Complex::SetComplex(double real, double imaginary) {
   real_ = real;
   imaginary_ = imaginary;
 }
 
+/** Add function
+ *  La función permite sumar dos números complejos
+ *  @param[in] complex1 Complex Object
+ *  @param[in] complex2 Complex Object
+ */
 void Complex::Add(Complex complex1, Complex complex2){
   real_ = complex1.real_ + complex2.real_;
   imaginary_ = complex1.imaginary_ + complex2.imaginary_;
 }
 
+/** Add function
+ *  La función permite restar dos números complejos
+ *  @param[in] complex1 Complex Object
+ *  @param[in] complex2 Complex Object
+ */
 void Complex::Sub(Complex complex1, Complex complex2){
   real_ = complex1.real_ - complex2.real_;
   imaginary_ = complex1.imaginary_ - complex2.imaginary_;
 }
 
+/** Add function
+ *  La función permite multiplicar dos números complejos
+ *  @param[in] complex1 Complex Object
+ *  @param[in] complex2 Complex Object
+ */
 void Complex::Multiplicate(Complex complex1, Complex complex2){
   real_ = complex1.real_ * complex2.real_ - complex1.imaginary_ * complex2.imaginary_;
   imaginary_ = complex1.real_ * complex2.imaginary_ + complex1.imaginary_ * complex2.real_;
 }
 
+/** Add function
+ *  La función permite dividir dos números complejos
+ *  @param[in] complex1 Complex Object
+ *  @param[in] complex2 Complex Object
+ */
 void Complex::Divide(Complex complex1, Complex complex2){
   real_ = (complex1.real_ * complex2.real_ - complex1.imaginary_ * complex2.imaginary_) / (complex2.real_ * complex2.real_ + complex2.imaginary_ * complex2.imaginary_);
   imaginary_ = (complex1.real_ * complex2.imaginary_ + complex1.imaginary_ * complex2.real_) / (complex2.real_ * complex2.real_ + complex2.imaginary_ * complex2.imaginary_);
