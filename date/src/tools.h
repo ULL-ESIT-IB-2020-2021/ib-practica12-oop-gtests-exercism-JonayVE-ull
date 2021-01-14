@@ -4,8 +4,8 @@
  * Grado en Ingeniería Informática
  * Informática Básica
  *
- * @author F. de Sande
- * @date 7.nov.2020
+ * @author Gabriel Jonay Vera Estévez
+ * @date 10.dic.2020
  * @brief This file declares the "Help Text" constant and two functions
  *
  */
