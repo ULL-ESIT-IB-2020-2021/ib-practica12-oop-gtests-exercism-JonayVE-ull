@@ -43,10 +43,21 @@ int main (int argc, char* argv[]) {
   std::string string_input;
   while (std::getline(input, string_input)) {
 
+    std::string day_, month_, year_;
+    day_ = string_input.substr(0,2);
+    month_ = string_input.substr(3,2);
+    year_ = string_input.substr(6,2);
+
+    if(year_.length() != 2 || month_.length() != 2 || day_.length() != 2){
+      std::cerr << "Asegurese que está introduciendo la fecha de la siguiente forma: dd/mm/aa, colocando 0 cuando este lo solicite e introduciendo el año con las dos últimas cifras, acorde a como se indica en la práctica" << std::endl;
+      exit(EXIT_SUCCESS);
+    }
+
     int day, month, year;
-    day = std::stoi(string_input.substr(0,2));
-    month = std::stoi(string_input.substr(3,2));
-    year = std::stoi(string_input.substr(6,2));
+    day = std::stoi(day_);
+    month = std::stoi(month_);
+    year = std::stoi(year_);
+
 
     Date some_date(day, month, year);
     date_object.push_back(some_date); 
