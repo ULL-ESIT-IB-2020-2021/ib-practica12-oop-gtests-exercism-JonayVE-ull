@@ -146,6 +146,7 @@ void IsDateValid(Date date){
         exit(EXIT_SUCCESS);
       }
       break;
+      
     default:
       std::cout << "fecha incorrecta, (dd/mm/aa), con 0 donde sea necesario" << std::endl;
         exit(EXIT_SUCCESS);
